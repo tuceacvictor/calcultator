@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        cygan: "#dba309"
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="h-dvh w-full flex justify-center items-center">
+        <div class="border-[15px] border-cygan w-[300px] h-[500px] flex items-center flex-col calculator-container">
+
+            <img src="https://blatata.com/upload/000/u1/c/0/tobi-king-photos-big.jpg" class="h-[100px] w-full calculator-container__image" />
+
+            <div class="display text-[#333001] centered" id="display">
+
+            </div>
+
+            <div class="toolbar w-full grid grid-cols-2 gap-4 p-2">
+                <div class="toolbar-button centered border-[1px]" id="plus">
+                    +
+                </div>
+                <div class="toolbar-button centered border-[1px]" id="minus">
+                    -
+                </div>
+            </div>
+
+            <div class="keyboard w-full grid grid-cols-3 gap-4 p-2" id="keypad">
+
+            </div>
+
+            <div class="w-full p-2">
+                <button id="equal" class="key-button border-[1px] w-full centered">
+                    <span class="pb-3 text-[75px]">=</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./script.js"></script>
+
+</html>

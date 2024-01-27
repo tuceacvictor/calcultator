@@ -1,0 +1,38 @@
+body {
+    background-image: url("https://media4.giphy.com/media/PP7RblbpOHAHu/giphy.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.display {
+    margin-top: 5px;
+    border: 1px solid gray;
+    width: 95%;
+    height: 40px;
+    font-size: 25px;
+    background: white;
+}
+
+.key-button {
+    text-align: center;
+    background: #f8f8f8;
+    transition: all 1s ease;
+    
+}
+
+.key-button:hover {
+    background: #f1a516;
+}
+
+.toolbar-button {
+    font-size: 1.2rem;
+    width: 100%;
+    background: white;
+}
+
+
+.centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
